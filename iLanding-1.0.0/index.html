@@ -1126,23 +1126,23 @@
               <h3>Oceantech Solutions</h3>
               <p>Formulário</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <form  method="POST" action="http://localhost:5000/sendemail" id="formularioEmail" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Nome" required="">
+                    <input type="text" id="nomeCliente" name="name" class="form-control" placeholder="Nome" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder=" Email" required="">
+                    <input type="email" id="emailCliente" class="form-control" name="email" placeholder=" Email" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                    <input type="text" id="assuntoEmail" class="form-control" name="subject" placeholder="Assunto" required="">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                    <textarea class="form-control" id="corpoEmail" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
@@ -1226,7 +1226,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/server.js"></script>
+  <script src="assets/js/sendemail.js"></script>
 </body>
 
 </html>
