@@ -26,8 +26,8 @@ const sendEmail = async (name, email, subject, message) => {
 //função de enviar o email
 
     let mailOptions = {
-        from: process.env.EMAIL_USER, // email que envia
-        to: 'pgrocha03@gmail.com',
+        from: process.env.EMAIL_USER, // configurar o e-mail da oceantech aqui, através do documento credenciais.env ele mesmo enviará os e-mails dos clientes para si
+        to: 'contato@oceantechsolutions.com',
         subject: subject,
         text: `Mensagem de ${name} (${email}):\n\n${message}`
     }
