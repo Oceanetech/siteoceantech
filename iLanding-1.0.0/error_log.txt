@@ -1,0 +1,1 @@
+2025-02-06 01:19:07 - Ocorreu um erro ao enviar a mensagem. Tente novamente. - Problema ao usar a função mail().
